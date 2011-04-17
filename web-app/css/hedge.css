@@ -1,0 +1,110 @@
+.basictext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #111111;
+	text-decoration: none;
+	line-height: 21px;
+}
+
+.navigation {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	letter-spacing: .1em;
+	word-spacing: .3em;
+}
+
+.globe {
+	background-image: url(../images/small-globe.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+a.navigation {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	color: #0066FF;
+	text-decoration: none;
+	letter-spacing: .1em;
+	word-spacing: .3em;
+}
+
+a.navigation:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	letter-spacing: .1em;
+	word-spacing: .3em;
+}
+
+.btmtable {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #3D4242;
+}
+
+.navbar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	letter-spacing: .1em;
+	word-spacing: .3em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+}
+
+.buttons {
+	border: 1px solid #0066FF;
+}
+
+.input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #0066FF;
+	height: 28px;
+	font-weight: bold;
+}
+
+#banner {
+	background-image: url(../images/small-globe.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-bottom: 15px;
+	padding-bottom: 0px;	
+	height: 93px;
+}
+
+#realestateAgentRealtorReasons {
+	width: 300px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 1px dashed;
+	padding : 10px;
+	
+}
+
+body {
+	width : 940px;
+	margin : 0 auto;
+}
+
+#paymentFieldSet tr {
+	margin-bottom: 10px;
+}
