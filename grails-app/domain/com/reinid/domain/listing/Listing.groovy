@@ -15,6 +15,7 @@ class Listing implements Serializable {
 	Integer listingID
 	Address listingAddress	
 	String listingType
+	String rentLeaseTerm
 	PropertyType propertyType
 	String propertyTypeMain
 	
