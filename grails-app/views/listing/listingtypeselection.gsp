@@ -3,6 +3,7 @@
 <head>
 <meta name='layout' content='mainsingle' />
 <link rel="stylesheet" href="${resource(dir:'css',file:'form.css')}" />
+<script type="text/javascript" src="${resource(dir:'js',file:'listingtypeselection.js')}"></script>
 <title>Create a new Listing</title>
 </head>
 
@@ -24,7 +25,7 @@
 							            </div>
 						            </g:hasErrors>
 									<g:form id="form" name="form" url="[action:'listingtypeselect',controller:'listing']">									
-										<h1>Sell or Lease?</h1>
+										<h1>Sell, Lease, or Rent?</h1>
 										
 										<label>Is Property Currently Listed
 										<span class="small">Please select</span>
@@ -33,7 +34,15 @@
 											class="value ${hasErrors(bean: listingInstance, field: 'propertyListed', 'errors')}"
 								        	from="${['No', 'Yes']}"
 								          	value="${listingInstance?.propertyListed}"/>
-										
+
+										<label>Commercial or Residential?
+										<span class="small">Please select</span>
+										</label>
+										<g:select name="propertyTypeMain" id="propertyTypeMain"
+											class="value ${hasErrors(bean: listingInstance, field: 'propertyTypeMain', 'errors')}"
+								        	from="${['Residential', 'Commercial']}"
+								          	value="${listingInstance?.propertyTypeMain}" />
+								          											
 										<label>What do you want to do with your property?
 										<span class="small">Please select</span>
 										</label>
@@ -41,14 +50,6 @@
 											class="value ${hasErrors(bean: listingInstance, field: 'listingType', 'errors')}"
 								        	from="${['Sell', 'Lease', 'Rent']}"
 								          	value="${listingInstance?.listingType}"/>								          	
-								        
-								        <label>Commercial or Residential?
-										<span class="small">Please select</span>
-										</label>
-										<g:select name="propertyTypeMain" id="propertyTypeMain"
-											class="value ${hasErrors(bean: listingInstance, field: 'propertyTypeMain', 'errors')}"
-								        	from="${['Residential', 'Commercial']}"
-								          	value="${listingInstance?.propertyTypeMain}" />
 								        
 								        <label>What type of property?
 										<span class="small">Please select</span>
