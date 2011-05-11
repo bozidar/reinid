@@ -48,8 +48,16 @@
 										</label>
 										<g:select name="listingType" id="listingType"
 											class="value ${hasErrors(bean: listingInstance, field: 'listingType', 'errors')}"
-								        	from="${['Sell', 'Lease', 'Rent']}"
+								        	from="${['[Please Select]', 'Sell', 'Lease', 'Rent']}"
 								          	value="${listingInstance?.listingType}"/>								          	
+								        
+								        <label>Rent/Lease Term
+										<span class="small">Please select</span>
+										</label>
+										<g:select name="rentLeaseTerm" id="rentLeaseTerm"
+											class="value ${hasErrors(bean: listingInstance, field: 'rentLeaseTerm', 'errors')}"
+								        	from="${['[Please Select]']}"
+								          	value="${listingInstance?.rentLeaseTerm}"/>
 								        
 								        <label>What type of property?
 										<span class="small">Please select</span>
